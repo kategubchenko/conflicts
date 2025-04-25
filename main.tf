@@ -1,6 +1,6 @@
 resource "null_resource" "example" {
   provisioner "local-exec" {
-    command = "echo 'Hello from branch A'"
+    command = "echo 'Hello from branch A-upd'"
   }
 
   triggers = {
