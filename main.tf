@@ -1,9 +1,9 @@
 resource "null_resource" "example" {
   provisioner "local-exec" {
-    command = "echo 'Hello from branch A-upd'"
+    command = "echo 'Hello from branch B'"
   }
 
   triggers = {
-    always_run = timestamp()
+    always_run = uuid()
   }
 }
